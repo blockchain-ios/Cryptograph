@@ -1,0 +1,21 @@
+PODS:
+  - Cryptograph (0.0.1):
+    - Cryptograph/Advance (= 0.0.1)
+    - Cryptograph/Crypto (= 0.0.1)
+  - Cryptograph/Advance (0.0.1):
+    - Cryptograph/Crypto
+  - Cryptograph/Crypto (0.0.1)
+
+DEPENDENCIES:
+  - Cryptograph (from `./`)
+
+EXTERNAL SOURCES:
+  Cryptograph:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  Cryptograph: 9a0318beeaf016fd23ddcd841294d998f4318a6d
+
+PODFILE CHECKSUM: 6add614a4b9f56da3fa805f3463aa77b2de3d716
+
+COCOAPODS: 1.11.2
