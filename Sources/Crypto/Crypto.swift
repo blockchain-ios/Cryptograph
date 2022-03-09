@@ -12,6 +12,8 @@ public struct Crypto {
     public struct HMAC { }
     public struct SHA256 { }
     public struct SHA512 { }
+    public struct Base58 { }
+    public struct PBKDF2 { }
 }
 
 extension Crypto {

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0099C7F7681212E9A464CE0D4B3455F1 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179876D324F1488132E78E894261B5A1 /* HMAC.swift */; };
+		0467B2F327D843960087DC8E /* Base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467B2F227D843960087DC8E /* Base58.swift */; };
+		0467B2F527D845E40087DC8E /* PBKDF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467B2F427D845E40087DC8E /* PBKDF2.swift */; };
+		0467B2F727D84A400087DC8E /* RIPEMD160.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467B2F627D84A400087DC8E /* RIPEMD160.swift */; };
 		0D7F170ED905DC86CA87950CBF587652 /* Pods-CryptoDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EDEF1674D8243AF032AD469AABE49AE /* Pods-CryptoDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CD63A8F62BCC05B7354F68E4A7B9EA1 /* Pods-CryptoDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C92E8AF5BF415D5FAE697311A372A827 /* Pods-CryptoDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45618C01CCE2F91FAEF9AA4EC25BB56E /* HMACAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690B986C5C89A12FDD5570A49AB5511 /* HMACAlgorithm.swift */; };
@@ -45,7 +48,10 @@
 /* Begin PBXFileReference section */
 		02398145870C38A8A0B4E8F847875DDA /* Pods-CryptoDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CryptoDemo.modulemap"; sourceTree = "<group>"; };
 		03CEB62A3022969AD4586668B6FDEB47 /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = Sources/Crypto/SHA2.swift; sourceTree = "<group>"; };
-		172C64CDCFCD9BB3435EFBCACA58BBB2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0467B2F227D843960087DC8E /* Base58.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base58.swift; path = Sources/Crypto/Base58.swift; sourceTree = "<group>"; };
+		0467B2F427D845E40087DC8E /* PBKDF2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PBKDF2.swift; path = Sources/Crypto/PBKDF2.swift; sourceTree = "<group>"; };
+		0467B2F627D84A400087DC8E /* RIPEMD160.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RIPEMD160.swift; path = Sources/Crypto/RIPEMD160.swift; sourceTree = "<group>"; };
+		172C64CDCFCD9BB3435EFBCACA58BBB2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		179876D324F1488132E78E894261B5A1 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/Crypto/HMAC.swift; sourceTree = "<group>"; };
 		187D4B3F525A8CD6A0953CB1EC12ED75 /* Pods-CryptoDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		218401A8B8D1EC1702F84BC150EA3B24 /* Pods-CryptoDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoDemo-Info.plist"; sourceTree = "<group>"; };
@@ -64,11 +70,11 @@
 		8EF6A68DFDD85543E89EA23CE59B0424 /* Pods-CryptoDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoDemoTests-dummy.m"; sourceTree = "<group>"; };
 		91ADB010432AD64389D07A3A56E8B2E4 /* Cryptograph.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cryptograph.release.xcconfig; sourceTree = "<group>"; };
 		9B68D072EEBD38E7C83BBFDFA388DA6E /* Pods-CryptoDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A367E437151B2FA9907061DFC9135773 /* Cryptograph */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cryptograph; path = Cryptograph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC0D5644DB13D479E9F77B5D6850C9B /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/Crypto/MD5.swift; sourceTree = "<group>"; };
 		C1250F20F55A0CC624FBFFD42C9920E1 /* Pods-CryptoDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoDemo-dummy.m"; sourceTree = "<group>"; };
-		C17E99035192B15820C25E4920F62F9E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C17E99035192B15820C25E4920F62F9E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C92E8AF5BF415D5FAE697311A372A827 /* Pods-CryptoDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoDemo-umbrella.h"; sourceTree = "<group>"; };
 		CACA5C255765343325CBA72722261460 /* Cryptograph-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Cryptograph-Info.plist"; sourceTree = "<group>"; };
 		D6F5F37387750F7E0EC12FC3EC50B3F0 /* Pods-CryptoDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -80,7 +86,7 @@
 		F690B986C5C89A12FDD5570A49AB5511 /* HMACAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMACAlgorithm.swift; path = Sources/Advance/HMACAlgorithm.swift; sourceTree = "<group>"; };
 		FC4ABF11DA03A641492734BEF459E85F /* Cryptograph.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cryptograph.modulemap; sourceTree = "<group>"; };
 		FD4E22B7ECD0AE09E930A70DC410425A /* Crypto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Crypto.swift; path = Sources/Crypto/Crypto.swift; sourceTree = "<group>"; };
-		FDB5A5A0C8701DA0CDC2910F994A38BC /* Cryptograph.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Cryptograph.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FDB5A5A0C8701DA0CDC2910F994A38BC /* Cryptograph.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Cryptograph.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,9 +198,12 @@
 		AA056B57B03A7FA94A5DF4633CE566B2 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				0467B2F227D843960087DC8E /* Base58.swift */,
 				FD4E22B7ECD0AE09E930A70DC410425A /* Crypto.swift */,
 				179876D324F1488132E78E894261B5A1 /* HMAC.swift */,
 				ABC0D5644DB13D479E9F77B5D6850C9B /* MD5.swift */,
+				0467B2F427D845E40087DC8E /* PBKDF2.swift */,
+				0467B2F627D84A400087DC8E /* RIPEMD160.swift */,
 				03CEB62A3022969AD4586668B6FDEB47 /* SHA2.swift */,
 			);
 			name = Crypto;
@@ -411,10 +420,13 @@
 				E59CCEB9CC2A90869064F0CAAC8A1230 /* Cryptograph-dummy.m in Sources */,
 				AF6780CDD8BB18265F8602BC3B893E9D /* CryptoMethod.swift in Sources */,
 				0099C7F7681212E9A464CE0D4B3455F1 /* HMAC.swift in Sources */,
+				0467B2F527D845E40087DC8E /* PBKDF2.swift in Sources */,
+				0467B2F327D843960087DC8E /* Base58.swift in Sources */,
 				45618C01CCE2F91FAEF9AA4EC25BB56E /* HMACAlgorithm.swift in Sources */,
 				A810B2B6DF7E5F07AB1492337D9DDA2E /* MD5.swift in Sources */,
 				9A697C45C89DBB158DE4AE7860252535 /* SHA2.swift in Sources */,
 				8B5F50C51A96043F0CE986976CEACF53 /* SHA2Variant.swift in Sources */,
+				0467B2F727D84A400087DC8E /* RIPEMD160.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
