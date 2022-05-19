@@ -1,21 +1,13 @@
 //
-//  CryptoMethod.swift
+//  Cryptor+Ex.swift
 //  Cryptograph
 //
-//  Created by Condy on 2022/3/8.
+//  Created by Condy on 2022/5/18.
 //
 
 import Foundation
-import ObjectiveC
 
-public enum CryptoMethod {
-    case MD5(lowercase: Bool)
-    case SHA2(SHA2Variant)
-    /// key支持`String`或者`[UInt8]`两种类型
-    indirect case HMAC(HMACAlgorithm, key: Any)
-}
-
-extension CryptoMethod {
+extension Cryptor: Encryptable {
     
     public func data(_ data: Data) -> Data {
         switch self {

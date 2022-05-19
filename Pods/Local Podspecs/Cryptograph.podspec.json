@@ -21,20 +21,6 @@
   "platforms": {
     "ios": "10.0"
   },
-  "subspecs": [
-    {
-      "name": "Crypto",
-      "source_files": "Sources/Crypto/*.swift"
-    },
-    {
-      "name": "Advance",
-      "source_files": "Sources/Advance/*.swift",
-      "dependencies": {
-        "Cryptograph/Crypto": [
-
-        ]
-      }
-    }
-  ],
+  "source_files": "Sources/*.swift",
   "swift_version": "5.0"
 }

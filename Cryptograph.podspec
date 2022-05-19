@@ -28,13 +28,6 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.ios.deployment_target = '10.0'
   
-  s.subspec 'Crypto' do |xx|
-    xx.source_files = 'Sources/Crypto/*.swift'
-  end
-  
-  s.subspec 'Advance' do |xx|
-    xx.source_files = 'Sources/Advance/*.swift'
-    xx.dependency 'Cryptograph/Crypto'
-  end
+  s.source_files = 'Sources/*.swift'
   
 end

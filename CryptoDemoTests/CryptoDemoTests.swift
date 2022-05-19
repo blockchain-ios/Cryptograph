@@ -34,22 +34,22 @@ class CryptoDemoTests: XCTestCase {
     }
     
     func testMD5() {
-        let result = CryptoMethod.MD5(lowercase: true).message("")
+        let result = Cryptor.MD5(true).message("")
         XCTAssertEqual(result, "d41d8cd98f00b204e9800998ecf8427e")
     }
     
     func testSHA256() {
-        let result = CryptoMethod.SHA2(SHA2Variant.SHA256).message("")
+        let result = Cryptor.SHA2(Crypto.SHA2.Algorithm.SHA256).message("")
         XCTAssertEqual(result, "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855")
     }
     
     func testSHA512() {
-        let result = CryptoMethod.SHA2(SHA2Variant.SHA512).message("")
+        let result = Cryptor.SHA2(Crypto.SHA2.Algorithm.SHA512).message("")
         XCTAssertEqual(result, "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e")
     }
     
     func testHMAC() {
-        let result = CryptoMethod.HMAC(HMACAlgorithm.md5, key: "").message("")
+        let result = Cryptor.HMAC(Crypto.HMAC.Algorithm.md5, key: "").message("")
         XCTAssertEqual(result, "74e6f7298a9c2d168935f58c001bad88")
     }
 }

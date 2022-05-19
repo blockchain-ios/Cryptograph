@@ -5,15 +5,15 @@
 //  Created by Condy on 2022/3/9.
 //
 
-/// `RIPEMD`(`RACE`原始完整性校验讯息摘要)
-/// `RIPEMD`是一种加密哈希函数
+///`RIPEMD
+/// RIPEMD是一种加密哈希函数，`RACE`原始完整性校验讯息摘要
 /// RIPEMD是以MD4为基础原则所设计的 ，而且其表现与更有名的SHA-1类似
 /// https://homes.esat.kuleuven.be/~bosselae/ripemd160.html
 /// https://stackoverflow.com/questions/43091858/swift-hash-a-string-using-hash-hmac-with-ripemd160
 
 import Foundation
 
-extension Crypto {
+extension Cryptograph.Crypto {
     public struct RIPEMD160 {
         private var MDbuf: (UInt32, UInt32, UInt32, UInt32, UInt32)
         private var buffer: Data

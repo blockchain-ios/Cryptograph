@@ -5,9 +5,9 @@
 //  Created by Condy on 2022/3/9.
 //
 
-/// `PBKDF2`
-/// `Password-Based Key Derivation Function 2`
-/// `PBKDF2`的基本原理是通过一个伪随机函数（例如`HMAC`函数），把明文和一个盐值作为输入参数，然后重复进行运算，并最终产生密钥
+///`PBKDF2
+/// Password-Based Key Derivation Function 2
+/// 基本原理是通过一个伪随机函数（例如`HMAC`函数），把明文和一个盐值作为输入参数，然后重复进行运算，并最终产生密钥
 /// 如果重复的次数足够大，破解的成本就会变得很高，而盐值的添加也会增加“彩虹表”攻击的难度
 /// https://en.wikipedia.org/wiki/PBKDF2
 /// https://baike.baidu.com/item/PBKDF2/237696?fr=aladdin
@@ -23,16 +23,14 @@
 import Foundation
 import CommonCrypto
 
-/// 算法类型
-public enum PBKDF2Algorithm {
-    case sha1
-    case sha224
-    case sha256
-    case sha384
-    case sha512
+extension Cryptograph.Crypto {
+    public struct PBKDF2 { }
 }
 
 extension Cryptograph.Crypto.PBKDF2 {
+    public enum Algorithm {
+        case sha1, sha224, sha256, sha384, sha512
+    }
     
     /// PBKDF2
     /// Password-Based Key Derivation Function 2
@@ -46,7 +44,7 @@ extension Cryptograph.Crypto.PBKDF2 {
     ///   - iterationsCount: 迭代次数
     ///   - dkLen: 输出密文的长度
     /// - Returns: 输出的密文
-    public static func PBKDF2(_ algorithmType: PBKDF2Algorithm,
+    public static func PBKDF2(_ algorithmType: Crypto.PBKDF2.Algorithm,
                               input: String,
                               salt: String,
                               iterationsCount: UInt32,
@@ -72,7 +70,7 @@ extension Cryptograph.Crypto.PBKDF2 {
     }
 }
 
-extension PBKDF2Algorithm {
+extension Cryptograph.Crypto.PBKDF2.Algorithm {
     var algorithmType: UInt32 {
         switch self {
         case .sha1:

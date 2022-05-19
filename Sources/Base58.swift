@@ -5,7 +5,7 @@
 //  Created by Condy on 2022/3/9.
 //
 
-/// Base58
+///`Base58
 /// 是用于比特币中使用的一种独特的编码方式，主要用于产生比特币钱包地址
 /// 相比`Base64`，`Base58`不使用数字"0"，字母大写"O"，字母大写"I"，和字母小写"l"，以及"+"和"/"符号
 /// 本质其实就是58进制
@@ -25,6 +25,10 @@
 /// 地址前缀列表：https://en.bitcoin.it/wiki/List_of_address_prefixes
 
 import Foundation
+
+extension Cryptograph.Crypto {
+    public struct Base58 { }
+}
 
 extension Cryptograph.Crypto.Base58 {
     private static let base58Alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"

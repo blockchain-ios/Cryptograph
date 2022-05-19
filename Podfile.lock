@@ -1,10 +1,5 @@
 PODS:
-  - Cryptograph (0.0.1):
-    - Cryptograph/Advance (= 0.0.1)
-    - Cryptograph/Crypto (= 0.0.1)
-  - Cryptograph/Advance (0.0.1):
-    - Cryptograph/Crypto
-  - Cryptograph/Crypto (0.0.1)
+  - Cryptograph (0.0.1)
 
 DEPENDENCIES:
   - Cryptograph (from `./`)
@@ -14,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  Cryptograph: 9a0318beeaf016fd23ddcd841294d998f4318a6d
+  Cryptograph: 74f704bc4273f4fb2a2afaeb4a2e8f2d1230a2b3
 
 PODFILE CHECKSUM: 6add614a4b9f56da3fa805f3463aa77b2de3d716
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
